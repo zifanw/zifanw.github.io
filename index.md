@@ -1,5 +1,7 @@
 # About Me
 
+![](/Users/sailwang/Documents/GitHub/zifanw.github.io/images/photo.jpg)
+
 I’m a second-year Ph.D. student in Electrical and Computer Enigneering, Carnegie Mellon University (CMU). I am co-advised by Prof.[Anupam Datta](http://www.andrew.cmu.edu/user/danupam/) and Prof. [Matt Fredrikson](http://www.cs.cmu.edu/~mfredrik/) in the [Accountable System Lab](https://fairlyaccountable.org). My current concentration focuses on the development of interpretations for deep neural networks. I received my Master degree in Electrical & Computer Enigneering from CMU, Silicon Valley Campus, a small and warm community located in Mountain View, CA. Before attending CMU, I received my Bachelor degree in Electronic Science and Technology from Beijing Institute of Technology, Beijing, China. Outside my professional life, I am an outgoing video game player, a hiker who also loves camping and road trip, and right now I am learning to play the skateboard. I also have a cat whose name is Pikachu. He is handsome and active. 
 
 
