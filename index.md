@@ -60,7 +60,7 @@ Check the [paper](https://arxiv.org/pdf/2009.08507.pdf)
 
 **Zifan Wang**, Yilin Yang, Ankit Shrivastava, Varun Rawal, Zihao Ding
 
-Check the [paper](https://arxiv.org/abs/2005.03141) and [video](https://ai.science/e/towards-frequency-based-explanation-for-robust-cnn--hBiCzxIOpi3iOm0woCyY)
+Check the [paper](https://arxiv.org/abs/2005.03141) and [video](https://www.youtube.com/watch?v=GbwO8Qh-Wv0)
 
 *Current explanation techniques towards a transparent Convolutional Neural Network (CNN) mainly focuses on building connections between the human-understandable input features with models' prediction, overlooking an alternative representation of the input, the frequency components decomposition. In this work, we present an analysis of the connection between the distribution of frequency components in the input dataset and the reasoning process the model learns from the data. We further provide quantification analysis about the contribution of different frequency components toward the model's prediction. We show that the vulnerability of the model against tiny distortions is a result of the model is relying on the high-frequency features, the target features of the adversarial (black and white-box) attackers, to make the prediction. We further show that if the model develops stronger association between the low-frequency component with true labels, the model is more robust, which is the explanation of why adversarially trained models are more robust against tiny distortions.*
 
@@ -73,3 +73,28 @@ Check the [paper](https://arxiv.org/abs/2005.03141) and [video](https://ai.scien
 Kaiji Lu, **Zifan Wang**, Piotr Mardzie, and Anupam Datta
 
 *While “attention is all you need” may be proving true, we do not yet know why: attention-based models such as BERT are superior but how they contextualize information even for simple grammatical rules such as subject-verb number agreement (SVA) is uncertain. We introduce multi-partite patterns, abstractions of sets of paths through a neural network model. Patterns quantify and localize the effect of an input concept (e.g., a subject’s number) on an output concept (e.g. corresponding verb’s number) to paths passing through a sequence of model components, thus surfacing how BERT contextualizes information. We describe guided pattern refinement, an efficient search procedure for finding patterns representative of concept-critical paths. We discover that patterns generate succinct and meaningful explanations for BERT, highlighted by “copy” and “transfer” operations implemented by skip connections and attention heads, respectively. We also show how pattern visualizations help us understand how BERT contextualizes SVA across clauses, and why it makes errors in some cases while succeeding in others.*
+
+
+
+# Teaching Assistance
+
+**Fall 2019**          CMU 18-661: [Introduction to Machine Learning for Engineers](https://18661.github.io/)
+
+**Spring 2020**    CMU 18-739: [Security and Fairness of Deep Learning](http://www.archive.ece.cmu.edu/~ece739/index.html)
+
+
+
+# Presentations
+
+### [2020-05-16] 言聚 Talk
+
+强大却无法理解的AI, 该不该使用？[Link](https://mp.weixin.qq.com/s/sjHVnp7sRN0eMf9c-1DDjQ)
+
+
+
+### [2020-07-15] AISC Presentation
+
+Towards Frequency-Based Explanation for Robust CNN [Link](https://ai.science/e/towards-frequency-based-explanation-for-robust-cnn--hBiCzxIOpi3iOm0woCyY)
+
+
+
