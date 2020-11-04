@@ -6,6 +6,10 @@ I’m a second-year Ph.D. student in Electrical and Computer Enigneering, Carneg
 
 
 
+**Check out my latest [Resume](Resume_ZW_more.pdf)**
+
+
+
 # Publicaitons 
 
 ### Smoothed Geometry for Robust Attribution [NeurIPS 2020]  
