@@ -6,7 +6,7 @@ I’m a second-year Ph.D. student in Electrical and Computer Enigneering, Carneg
 
 
 
-**Check out my latest [Resume](Resume_ZW_more.pdf)**
+**Check out my latest [Resume](https://drive.google.com/file/d/1hSX3ouJPLr_LI8ANhXMPfkMYiSHNNwTb/view?usp=sharing)**
 
 
 
