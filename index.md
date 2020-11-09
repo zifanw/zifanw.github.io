@@ -16,7 +16,7 @@ I’m a second-year Ph.D. student in Electrical and Computer Enigneering, Carneg
 
 **Zifan Wang**, Haofan Wang, Shakul Ramkumar, Matt Fredrikson, Piotr Mardziel, Anupam Datta
 
-Check the [paper](https://arxiv.org/pdf/2006.06643v1.pdf)
+Check the [paper](https://arxiv.org/pdf/2006.06643v1.pdf), [poster](./resource/doc/smooth_poster.pdf)
 
 *Feature attributions are a popular tool for explaining the behavior of Deep Neural Networks (DNNs), but have recently been shown to be vulnerable to attacks that produce divergent explanations for nearby inputs. This lack of robustness is especially problematic in high-stakes applications where adversarially-manipulated explanations could impair safety and trustworthiness. Building on a geometric understanding of these attacks presented in recent work, we identify Lipschitz continuity conditions on models' gradient that lead to robust gradient-based attributions, and observe that smoothness may also be related to the ability of an attack to transfer across multiple attribution methods. To mitigate these attacks in practice, we propose an inexpensive regularization method that promotes these conditions in DNNs, as well as a stochastic smoothing technique that does not require re-training. Our experiments on a range of image models demonstrate that both of these mitigations consistently improve attribution robustness, and confirm the role that smooth geometry plays in these attacks on real, large-scale models.*
 
@@ -75,6 +75,8 @@ Check the [paper](https://arxiv.org/abs/2005.03141) and [video](https://www.yout
 ### Abstracting Influence Paths for Explaining (Contextualization of) BERT Models
 
 Kaiji Lu, **Zifan Wang**, Piotr Mardzie, and Anupam Datta
+
+Check the [paper](https://arxiv.org/abs/2011.00740) 
 
 *While “attention is all you need” may be proving true, we do not yet know why: attention-based models such as BERT are superior but how they contextualize information even for simple grammatical rules such as subject-verb number agreement (SVA) is uncertain. We introduce multi-partite patterns, abstractions of sets of paths through a neural network model. Patterns quantify and localize the effect of an input concept (e.g., a subject’s number) on an output concept (e.g. corresponding verb’s number) to paths passing through a sequence of model components, thus surfacing how BERT contextualizes information. We describe guided pattern refinement, an efficient search procedure for finding patterns representative of concept-critical paths. We discover that patterns generate succinct and meaningful explanations for BERT, highlighted by “copy” and “transfer” operations implemented by skip connections and attention heads, respectively. We also show how pattern visualizations help us understand how BERT contextualizes SVA across clauses, and why it makes errors in some cases while succeeding in others.*
 
