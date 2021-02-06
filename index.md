@@ -5,10 +5,14 @@
 I’m a second-year Ph.D. student in Electrical and Computer Enigneering, Carnegie Mellon University (CMU). I am co-advised by Prof.[Anupam Datta](http://www.andrew.cmu.edu/user/danupam/) and Prof. [Matt Fredrikson](http://www.cs.cmu.edu/~mfredrik/) in the [Accountable System Lab](https://fairlyaccountable.org). My current concentration focuses on the development of interpretations for deep neural networks. I received my Master degree in Electrical & Computer Enigneering from CMU, Silicon Valley Campus, a small and warm community located in Mountain View, CA. Before attending CMU, I received my Bachelor degree in Electronic Science and Technology from Beijing Institute of Technology, Beijing, China. Outside my professional life, I am an outgoing video game player, a hiker who also loves camping and road trip, and right now I am learning to play the skateboard. I also have a cat whose name is Pikachu. He is handsome and active. 
 
 
-
 **Check out my latest [Resume](https://drive.google.com/file/d/1hSX3ouJPLr_LI8ANhXMPfkMYiSHNNwTb/view?usp=sharing)**
 
 
+
+# News!
+- Check out our *AAAI-21* Tutorial on model explainability from our tutorial [homepage](https://fairlyaccountable.org/aaai-2021-tutorial/) and recordings from the [AAAI virtual cite](https://virtual.2021.aaai.org/tutorial_AH3.html).
+
+- Check out [TruLens](https://github.com/truera/trulens), a Python library for explaining Deep Neural Networks.
 
 # Publicaitons 
 
@@ -48,13 +52,13 @@ Check the [paper](http://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang
 
 # Preprint
 
-### Towards Behavior-Level Explanation for Deep Reinforcement Learning
+### Reconstructing Actions To Explain Deep Reinforcement Learning
 
 Xuan Chen, **Zifan Wang**, Yucai Fan, Bonan Jin, Piotr Mardziel, Carlee Joe-Wong, Anupam Datta
 
 Check the [paper](https://arxiv.org/pdf/2009.08507.pdf)
 
-*Current explanation techniques towards a transparent Convolutional Neural Network (CNN) mainly focuses on building connections between the human-understandable input features with models' prediction, overlooking an alternative representation of the input, the frequency components decomposition. In this work, we present an analysis of the connection between the distribution of frequency components in the input dataset and the reasoning process the model learns from the data. We further provide quantification analysis about the contribution of different frequency components toward the model's prediction. We show that the vulnerability of the model against tiny distortions is a result of the model is relying on the high-frequency features, the target features of the adversarial (black and white-box) attackers, to make the prediction. We further show that if the model develops stronger association between the low-frequency component with true labels, the model is more robust, which is the explanation of why adversarially trained models are more robust against tiny distortions.*
+*Feature attribution has been a foundational building block for explaining the input feature importance in supervised learning with Deep Neural Network (DNNs), but face new challenges when applied to deep Reinforcement Learning (RL).We propose a new approach to explaining deep RL actions by defining a class of \emph{action reconstruction} functions that mimic the behavior of a network in deep RL. This approach allows us to answer more complex explainability questions than direct application of DNN attribution methods, which we adapt to \emph{behavior-level attributions} in building our action reconstructions. It also allows us to define \emph{agreement}, a metric for quantitatively evaluating the explainability of our methods. Our experiments on a variety of Atari games suggest that perturbation-based attribution methods are significantly more suitable in reconstructing actions to explain the deep RL agent than alternative attribution methods, and show greater \emph{agreement} than existing explainability work utilizing attention. We further show that action reconstruction allows us to demonstrate how a deep agent learns to play Pac-Man game.*
 
 ***
 
@@ -79,6 +83,23 @@ Kaiji Lu, **Zifan Wang**, Piotr Mardzie, and Anupam Datta
 Check the [paper](https://arxiv.org/abs/2011.00740) 
 
 *While “attention is all you need” may be proving true, we do not yet know why: attention-based models such as BERT are superior but how they contextualize information even for simple grammatical rules such as subject-verb number agreement (SVA) is uncertain. We introduce multi-partite patterns, abstractions of sets of paths through a neural network model. Patterns quantify and localize the effect of an input concept (e.g., a subject’s number) on an output concept (e.g. corresponding verb’s number) to paths passing through a sequence of model components, thus surfacing how BERT contextualizes information. We describe guided pattern refinement, an efficient search procedure for finding patterns representative of concept-critical paths. We discover that patterns generate succinct and meaningful explanations for BERT, highlighted by “copy” and “transfer” operations implemented by skip connections and attention heads, respectively. We also show how pattern visualizations help us understand how BERT contextualizes SVA across clauses, and why it makes errors in some cases while succeeding in others.*
+
+
+# Open-Source Projects
+
+### [TruLens](https://github.com/truera/trulens): Library for Explaining Deep Neural Networks.
+
+```
+@misc{Trulens,
+  doi = {10.5281/ZENODO.4495856},
+  url = {https://zenodo.org/record/4495856},
+  author = {Leino, Klas and Shih, Ricardo and Fredrikson, Matt and She, Jennifer and Wang, Zifan and Lu, Caleb and Sen, Shayak and Gopinath, Divya and {, Anupam}},
+  title = {truera/trulens: Trulens},
+  publisher = {Zenodo},
+  year = {2021},
+  copyright = {Open Access}
+}
+```
 
 
 
