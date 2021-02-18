@@ -56,6 +56,8 @@ Check the [paper](http://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang
 
 Klas Leino, **Zifan Wang**, Matt Fredrikson
 
+Check the [paper](https://arxiv.org/pdf/2102.08452.pdf)
+
 *The threat of adversarial examples has motivated work on training certifiably robust neural networks, to facilitate efficient verification of local robustness at inference time. We formalize a notion of global robustness, which captures the operational properties of on-line local robustness certification while yielding a natural learning objective for robust training. We show that widely-used architectures can be easily adapted to this objective by incorporating efficient global Lipschitz bounds into the network, yielding certifiably-robust models by construction that achieve state-of-the-art verifiable accuracy. Notably, this approach requires significantly less time and memory than recent certifiable training methods, and leads to negligible costs when certifying points on-line; for example, our evaluation shows that it is possible to train a large tiny-imagenet model in a matter of hours. We posit that this is possible using inexpensive global bounds—despite prior suggestions that tighter local bounds are needed for good performance—because these models are trained to achieve tighter global bounds. Namely, we prove that the maximum achievable verifiable accuracy for a given dataset is not improved by using a local bound.*
 
 ***
