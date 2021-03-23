@@ -52,6 +52,17 @@ Check the [paper](http://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang
 
 # Preprint
 
+### Boundary Attributions Provie Normal (Vector) Explanations
+
+**Zifan Wang**, Matt Fredrikson, Anupam Datta
+
+Check the [paper](https://arxiv.org/pdf/2103.11257.pdf)
+
+*Recent work on explaining Deep Neural Networks (DNNs) focuses on attributing the model's output scores to input features. However, when it comes to classification problems, a more fundamental question is how much does each feature contributes to the model's decision to classify an input instance into a specific class. Our first contribution is Boundary Attribution, a new explanation method to address this question. BA leverages an understanding of the geometry of activation regions. Specifically, they involve computing (and aggregating) normal vectors of the local decision boundaries for the target input. Our second contribution is a set of analytical results connecting the adversarial robustness of the network and the quality of gradient-based explanations. Specifically, we prove two theorems for ReLU networks: BA of randomized smoothed networks or robustly trained networks is much closer to non-boundary attribution methods than that in standard networks. These analytics encourage users to improve model robustness for high-quality explanations. Finally, we evaluate the proposed methods on ImageNet and show BAs produce more concentrated and sharper visualizations compared with non-boundary ones. We further demonstrate that our method also helps to reduce the sensitivity of attributions to the baseline input if one is required.*
+
+***
+
+
 ### Globally-Robust Neural Networks
 
 Klas Leino, **Zifan Wang**, Matt Fredrikson
