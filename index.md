@@ -52,7 +52,7 @@ Check the [paper](http://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang
 
 # Preprint
 
-### Boundary Attributions Provie Normal (Vector) Explanations
+### Boundary Attributions Provide Normal (Vector) Explanations
 
 **Zifan Wang**, Matt Fredrikson, Anupam Datta
 
