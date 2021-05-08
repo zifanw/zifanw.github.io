@@ -10,11 +10,21 @@ I’m a second-year Ph.D. student in Electrical and Computer Enigneering, Carneg
 
 
 # News!
+- Our work *Globally-Robust Neural Network* is accepted as short presentation in ICML 2021.
+
 - Check out our *AAAI-21* Tutorial on model explainability from our tutorial [homepage](https://fairlyaccountable.org/aaai-2021-tutorial/) and recordings from the [AAAI virtual cite](https://virtual.2021.aaai.org/tutorial_AH3.html).
 
-- Check out [TruLens](https://github.com/truera/trulens), a Python library for explaining Deep Neural Networks.
-
 # Publicaitons 
+
+### Globally-Robust Neural Networks [ICML 2021]
+
+Klas Leino, **Zifan Wang**, Matt Fredrikson
+
+Check the [paper](https://arxiv.org/pdf/2102.08452.pdf)
+
+*The threat of adversarial examples has motivated work on training certifiably robust neural networks, to facilitate efficient verification of local robustness at inference time. We formalize a notion of global robustness, which captures the operational properties of on-line local robustness certification while yielding a natural learning objective for robust training. We show that widely-used architectures can be easily adapted to this objective by incorporating efficient global Lipschitz bounds into the network, yielding certifiably-robust models by construction that achieve state-of-the-art verifiable accuracy. Notably, this approach requires significantly less time and memory than recent certifiable training methods, and leads to negligible costs when certifying points on-line; for example, our evaluation shows that it is possible to train a large tiny-imagenet model in a matter of hours. We posit that this is possible using inexpensive global bounds—despite prior suggestions that tighter local bounds are needed for good performance—because these models are trained to achieve tighter global bounds. Namely, we prove that the maximum achievable verifiable accuracy for a given dataset is not improved by using a local bound.*
+
+***
 
 ### Smoothed Geometry for Robust Attribution [NeurIPS 2020]  
 
@@ -62,16 +72,6 @@ Check the [paper](https://arxiv.org/pdf/2103.11257.pdf)
 
 ***
 
-
-### Globally-Robust Neural Networks
-
-Klas Leino, **Zifan Wang**, Matt Fredrikson
-
-Check the [paper](https://arxiv.org/pdf/2102.08452.pdf)
-
-*The threat of adversarial examples has motivated work on training certifiably robust neural networks, to facilitate efficient verification of local robustness at inference time. We formalize a notion of global robustness, which captures the operational properties of on-line local robustness certification while yielding a natural learning objective for robust training. We show that widely-used architectures can be easily adapted to this objective by incorporating efficient global Lipschitz bounds into the network, yielding certifiably-robust models by construction that achieve state-of-the-art verifiable accuracy. Notably, this approach requires significantly less time and memory than recent certifiable training methods, and leads to negligible costs when certifying points on-line; for example, our evaluation shows that it is possible to train a large tiny-imagenet model in a matter of hours. We posit that this is possible using inexpensive global bounds—despite prior suggestions that tighter local bounds are needed for good performance—because these models are trained to achieve tighter global bounds. Namely, we prove that the maximum achievable verifiable accuracy for a given dataset is not improved by using a local bound.*
-
-***
 
 ### Reconstructing Actions To Explain Deep Reinforcement Learning
 
