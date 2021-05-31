@@ -1,4 +1,7 @@
-# About Me
+
+Visit my new [homepage](https://sites.google.com/west.cmu.edu/zifan-wang/home) now or copy the following URL in to your web broswer: https://sites.google.com/west.cmu.edu/zifan-wang/home
+
+<!-- # About Me
 
 ![](./images/photo.jpg)
 
@@ -145,4 +148,4 @@ Check the [paper](https://arxiv.org/abs/2011.00740)
 Towards Frequency-Based Explanation for Robust CNN [Link](https://ai.science/e/towards-frequency-based-explanation-for-robust-cnn--hBiCzxIOpi3iOm0woCyY)
 
 
-
+ -->
