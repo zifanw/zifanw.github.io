@@ -3,182 +3,598 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Full publication list for Sail (Zifan) Wang, grouped by research area.">
-  <title>Publications | Sail (Zifan) Wang</title>
+  <meta name="description" content="Full publication list for Zifan (Sail) Wang, grouped by research area.">
+  <title>Publications | Zifan (Sail) Wang</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   <header class="site-header">
     <div class="site-shell nav">
-      <a class="brand" href="index.html" aria-label="Sail Wang home">
-        Sail (Zifan) Wang
-        <span>Trustworthy Machine Learning Researcher</span>
+      <a class="brand" href="index.html" aria-label="Zifan Wang home">
+        Zifan (Sail) Wang
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="publications.html" aria-current="page">Publications</a>
-        <a href="index.html#research">Research</a>
-        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="site-shell">
     <section class="page-title">
-      <p class="eyebrow">Full Publication List</p>
-      <h1>Publications grouped by research area.</h1>
-      <p>Selected work across robust machine learning, neural network interpretability, reinforcement learning explanations, language model analysis, and open-source interpretability tooling.</p>
+      <p class="eyebrow">Research Publications</p>
+      <h1>Publications</h1>
     </section>
 
-    <section class="area-block" aria-labelledby="robustness-heading">
+    <section class="publication-filter" aria-label="Filter publications by year">
+      <div class="filter-fields">
+        <label for="year-from">From year</label>
+        <input id="year-from" type="number" inputmode="numeric" min="1900" max="2100" placeholder="All">
+        <label for="year-to">To year</label>
+        <input id="year-to" type="number" inputmode="numeric" min="1900" max="2100" placeholder="All">
+        <button class="button" type="button" id="year-reset">Show all</button>
+      </div>
+      <p class="filter-status" id="filter-status" aria-live="polite"></p>
+    </section>
+
+    <section class="area-block" aria-labelledby="ai-safety-and-llm-security-heading">
       <div class="area-heading">
-        <h2 id="robustness-heading">Robustness and Attribution</h2>
-        <span>Neural network explanations under perturbation</span>
+        <h2 id="ai-safety-and-llm-security-heading">AI Safety and LLM Security</h2>
+        <span>Red teaming, jailbreaks, malicious-use evaluation, and safety benchmarks.</span>
       </div>
       <div class="compact-publications">
-        <article class="publication">
-          <span class="venue">ICML 2021</span>
-          <h3>Globally-Robust Neural Networks</h3>
-          <p class="authors">Klas Leino, <strong>Zifan Wang</strong>, Matt Fredrikson</p>
-          <p class="summary">Certifiably robust model construction using efficient global Lipschitz bounds and robust training objectives.</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2102.08452.pdf">PDF</a>
+        <article class="publication" data-year="2026">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2026</span>
+            </div>
+            <h3>Muse Spark Safety and Preparedness Report</h3>
+            <p class="authors">MSL et al.; <strong>Zifan Wang: adversarial robustness lead</strong></p>
+            <p class="summary">A comprehensive report for Muse Spark on preparedness, adversarial robustness, and model behaviors.</p>
+            <div class="pub-links">
+              <a href="https://ai.meta.com/static-resource/muse-spark-safety-and-preparedness-report/">Report</a>
+            </div>
           </div>
         </article>
 
-        <article class="publication">
-          <span class="venue">NeurIPS 2020</span>
-          <h3>Smoothed Geometry for Robust Attribution</h3>
-          <p class="authors"><strong>Zifan Wang</strong>, Haofan Wang, Shakul Ramkumar, Matt Fredrikson, Piotr Mardziel, Anupam Datta</p>
-          <p class="summary">Lipschitz and smoothness conditions for robust gradient-based attributions, with regularization and smoothing strategies.</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2006.06643v1.pdf">PDF</a>
-            <a href="resource/doc/smooth_poster.pdf">Poster</a>
+        <article class="publication" data-year="2025">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2025</span>
+            </div>
+            <h3>Best Practices for Biorisk Evaluations on Open-Weight Bio-Foundation Models</h3>
+            <p class="authors">B Wei, Z Che, N Li, UM Sehwag, J Götting, S Nedungadi, J Michael, ...</p>
+            <p class="summary">arXiv preprint arXiv:2510.27629, 2025</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2510.27629">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:TQgYirikUcIC">Scholar</a>
+            </div>
           </div>
         </article>
 
-        <article class="publication">
-          <span class="venue">Preprint</span>
-          <h3>Boundary Attributions Provide Normal (Vector) Explanations</h3>
-          <p class="authors"><strong>Zifan Wang</strong>, Matt Fredrikson, Anupam Datta</p>
-          <p class="summary">A boundary-focused explanation method using local decision-boundary normal vectors, with analytical links between robustness and explanation quality.</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2103.11257.pdf">PDF</a>
+        <article class="publication" data-year="2025">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2025</span>
+            </div>
+            <h3>A red teaming roadmap towards system-level safety</h3>
+            <p class="authors">Z Wang, CQ Knight, J Kritz, WE Primack, J Michael</p>
+            <p class="summary">arXiv preprint arXiv:2506.05376, 2025</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2506.05376">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:qUcmZB5y_30C">Scholar</a>
+            </div>
           </div>
         </article>
 
-        <article class="publication">
-          <span class="venue">Preprint</span>
-          <h3>Towards Frequency-Based Explanation for Robust CNN</h3>
-          <p class="authors"><strong>Zifan Wang</strong>, Yilin Yang, Ankit Shrivastava, Varun Rawal, Zihao Ding</p>
-          <p class="summary">An analysis of frequency components in model reasoning and their connection to adversarial robustness in convolutional neural networks.</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/abs/2005.03141">arXiv</a>
-            <a href="https://www.youtube.com/watch?v=GbwO8Qh-Wv0">Video</a>
+        <article class="publication" data-year="2025">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2025</span>
+            </div>
+            <h3>Jailbreaking to jailbreak</h3>
+            <p class="authors">J Kritz, V Robinson, R Vacareanu, B Varjavand, M Choi, B Gogov, ...</p>
+            <p class="summary">arXiv preprint arXiv:2502.09638, 2025</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2502.09638">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:hC7cP41nSMkC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2024">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2024</span>
+            </div>
+            <h3>Refusal-trained llms are easily jailbroken as browser agents</h3>
+            <p class="authors">P Kumar, E Lau, S Vijayakumar, T Trinh, SR Team, E Chang, V Robinson, ...</p>
+            <p class="summary">arXiv preprint arXiv:2410.13886, 2024</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2410.13886">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:IWHjjKOFINEC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2024">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2024</span>
+            </div>
+            <h3>Llm defenses are not robust to multi-turn human jailbreaks yet</h3>
+            <p class="authors">N Li, Z Han, I Steneker, W Primack, R Goodside, H Zhang, Z Wang, ...</p>
+            <p class="summary">arXiv preprint arXiv:2408.15221, 2024</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2408.15221">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:ZeXyd9-uunAC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2024">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2024</span>
+            </div>
+            <h3>The wmdp benchmark: Measuring and reducing malicious use with unlearning</h3>
+            <p class="authors">N Li, A Pan, A Gopal, S Yue, D Berrios, A Gatti, JD Li, AK Dombrowski, ...</p>
+            <p class="summary">arXiv preprint arXiv:2403.03218, 2024</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2403.03218">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:QIV2ME_5wuYC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2024">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2024</span>
+            </div>
+            <h3>Harmbench: A standardized evaluation framework for automated red teaming and robust refusal</h3>
+            <p class="authors">M Mazeika, L Phan, X Yin, A Zou, Z Wang, N Mu, E Sakhaee, N Li, ...</p>
+            <p class="summary">arXiv preprint arXiv:2402.04249, 2024</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2402.04249">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:dhFuZR0502QC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Can LLMs Follow Simple Rules?</h3>
+            <p class="authors">N Mu, S Chen, Z Wang, S Chen, D Karamardian, L Aljeraisy, B Alomair, ...</p>
+            <p class="summary">arXiv preprint arXiv:2311.04235, 2023</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2311.04235">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:7PzlFSSx8tAC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Transfer attacks and defenses for large language models on coding tasks</h3>
+            <p class="authors">C Zhang, Z Wang, R Mangal, M Fredrikson, L Jia, C Pasareanu</p>
+            <p class="summary">arXiv preprint arXiv:2311.13445, 2023</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2311.13445">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:9ZlFYXVOiuMC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Universal and transferable adversarial attacks on aligned language models</h3>
+            <p class="authors">A Zou, Z Wang, N Carlini, M Nasr, JZ Kolter, M Fredrikson</p>
+            <p class="summary">arXiv preprint arXiv:2307.15043, 2023</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2307.15043">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:4TOpqqG69KYC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Representation engineering: A top-down approach to ai transparency</h3>
+            <p class="authors">A Zou, L Phan, S Chen, J Campbell, P Guo, R Ren, A Pan, X Yin, ...</p>
+            <p class="summary">arXiv preprint arXiv:2310.01405, 2023</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2310.01405">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:aqlVkmm33-oC">Scholar</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="area-block" aria-labelledby="interpretability-heading">
+    <section class="area-block" aria-labelledby="agents-web-and-evaluation-heading">
       <div class="area-heading">
-        <h2 id="interpretability-heading">Interpretability Methods</h2>
-        <span>Attribution criteria and visual explanations</span>
+        <h2 id="agents-web-and-evaluation-heading">Agents, Web, and Evaluation</h2>
+        <span>Benchmarks, monitoring, data contamination, and web-agent guardrails.</span>
       </div>
       <div class="compact-publications">
-        <article class="publication">
-          <span class="venue">CVPR Workshop 2020</span>
-          <h3>Interpreting Interpretations: Organizing Attribution Methods by Criteria</h3>
-          <p class="authors"><strong>Zifan Wang</strong>, Piotr Mardziel, Anupam Datta, Matt Fredrikson</p>
-          <p class="summary">A framework for comparing attribution methods through necessity, sufficiency, and proportionality criteria.</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/abs/2002.07985">arXiv</a>
-            <a href="resource/IIOAMC/slides.pdf">Slides</a>
-            <a href="https://youtu.be/cyYHoTyNMfQ">Video</a>
+        <article class="publication" data-year="2025">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2025</span>
+            </div>
+            <h3>Reliable Weak-to-Strong Monitoring of LLM Agents</h3>
+            <p class="authors">N Kale, CBC Zhang, K Zhu, A Aich, P Rodriguez, SR Team, CQ Knight, ...</p>
+            <p class="summary">arXiv preprint arXiv:2508.19461, 2025</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2508.19461">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:R3hNpaxXUhUC">Scholar</a>
+            </div>
           </div>
         </article>
 
-        <article class="publication">
-          <span class="venue">CVPR Workshop 2020</span>
-          <h3>Score-CAM: Score-Weighted Visual Explanations for Convolutional Neural Networks</h3>
-          <p class="authors">Haofan Wang, <strong>Zifan Wang</strong>, Mengnan Du, Fan Yang, Zijian Zhang, Sirui Ding, Piotr Mardziel, Xia Hu</p>
-          <p class="summary">A gradient-free class activation mapping method that weights activation maps using forward-passing target-class scores.</p>
-          <div class="pub-links">
-            <a href="http://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang_Score-CAM_Score-Weighted_Visual_Explanations_for_Convolutional_Neural_Networks_CVPRW_2020_paper.pdf">PDF</a>
-            <a href="resource/Score_CAM/slides.pdf">Slides</a>
-            <a href="https://www.youtube.com/watch?v=lB0nZ71ASpo">Video</a>
+        <article class="publication" data-year="2025">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2025</span>
+            </div>
+            <h3>Search-time data contamination</h3>
+            <p class="authors">Z Han, M Mankikar, J Michael, Z Wang</p>
+            <p class="summary">arXiv preprint arXiv:2508.13180, 2025</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2508.13180">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:mB3voiENLucC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2025">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2025</span>
+            </div>
+            <h3>Webguard: Building a generalizable guardrail for web agents</h3>
+            <p class="authors">B Zheng, Z Liao, S Salisbury, Z Liu, M Lin, Q Zheng, Z Wang, X Deng, ...</p>
+            <p class="summary">arXiv preprint arXiv:2507.14293, 2025</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2507.14293">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:HDshCWvjkbEC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2025">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2025</span>
+            </div>
+            <h3>Swe-bench pro: Can ai agents solve long-horizon software engineering tasks?</h3>
+            <p class="authors">X Deng, J Da, E Pan, YY He, C Ide, K Garg, N Lauffer, A Park, N Pasari, ...</p>
+            <p class="summary">arXiv preprint arXiv:2509.16941, 2025</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2509.16941">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:_Qo2XoVZTnwC">Scholar</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="area-block" aria-labelledby="agents-heading">
+    <section class="area-block" aria-labelledby="robustness-and-certification-heading">
       <div class="area-heading">
-        <h2 id="agents-heading">Agents and Language Models</h2>
-        <span>Behavior and contextualization</span>
+        <h2 id="robustness-and-certification-heading">Robustness and Certification</h2>
+        <span>Certified robustness, robust training, and adversarial robustness for vision models.</span>
       </div>
       <div class="compact-publications">
-        <article class="publication">
-          <span class="venue">Preprint</span>
-          <h3>Reconstructing Actions To Explain Deep Reinforcement Learning</h3>
-          <p class="authors"><strong>Zifan Wang*</strong>, Xuan Chen*, Yucai Fan, Bonan Jin, Piotr Mardziel, Carlee Joe-Wong, Anupam Datta</p>
-          <p class="summary">Action reconstruction functions for explaining deep reinforcement learning behavior beyond direct input attribution.</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2009.08507.pdf">PDF</a>
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>A recipe for improved certifiable robustness: Capacity and data</h3>
+            <p class="authors">K Hu, K Leino, Z Wang, M Fredrikson</p>
+            <p class="summary">ICLR 2024, 2023</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:qxL8FJ1GzNcC">Scholar</a>
+            </div>
           </div>
         </article>
 
-        <article class="publication">
-          <span class="venue">Preprint</span>
-          <h3>Abstracting Influence Paths for Explaining Contextualization of BERT Models</h3>
-          <p class="authors">Kaiji Lu, <strong>Zifan Wang</strong>, Piotr Mardziel, Anupam Datta</p>
-          <p class="summary">Multi-partite influence patterns for localizing how BERT contextualizes linguistic concepts through model components.</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/abs/2011.00740">arXiv</a>
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Is Certifying  Robustness Still Worthwhile?</h3>
+            <p class="authors">R Mangal, K Leino, Z Wang, K Hu, W Yu, C Pasareanu, A Datta, ...</p>
+            <p class="summary">arXiv preprint arXiv:2310.09361, 2023</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2310.09361">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:4DMP91E08xMC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Unlocking deterministic robustness certification on imagenet</h3>
+            <p class="authors">K Hu, A Zou, Z Wang, K Leino, M Fredrikson</p>
+            <p class="summary">Advances in Neural Information Processing Systems 36, 42993-43011, 2023</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:Wp0gIr-vW9MC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Improving robust generalization by direct pac-bayesian bound minimization</h3>
+            <p class="authors">Z Wang, N Ding, T Levinboim, X Chen, R Soricut</p>
+            <p class="summary">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2023</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2211.12624">arXiv</a> <a href="https://arxiv.org/pdf/2211.12624">PDF</a>
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:ULOm3_A8WrAC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2022">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2022</span>
+            </div>
+            <h3>On the perils of cascading robust classifiers</h3>
+            <p class="authors">R Mangal, Z Wang, C Zhang, K Leino, C Pasareanu, M Fredrikson</p>
+            <p class="summary">arXiv preprint arXiv:2206.00278, 2022</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2206.00278">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:MXK_kJrjxJIC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2021">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2021</span>
+            </div>
+            <h3>Globally-Robust Neural Networks</h3>
+            <p class="authors">K Leino, Z Wang, M Fredrikson</p>
+            <p class="summary">Proceedings of ICML 2021, 2021</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:ufrVoPGSRksC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2021">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2021</span>
+            </div>
+            <h3>Robust models are more interpretable because attributions look normal</h3>
+            <p class="authors">Z Wang, M Fredrikson, A Datta</p>
+            <p class="summary">arXiv preprint arXiv:2103.11257, 2021</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2103.11257">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:0EnyYjriUFMC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2020">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2020</span>
+            </div>
+            <h3>Towards frequency-based explanation for robust CNN</h3>
+            <p class="authors">Z Wang, Y Yang, A Shrivastava, V Rawal, Z Ding</p>
+            <p class="summary">arXiv preprint arXiv:2005.03141, 2020</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2005.03141">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:d1gkVwhDpl0C">Scholar</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="area-block" aria-labelledby="software-heading">
+    <section class="area-block" aria-labelledby="interpretability-and-explainability-heading">
       <div class="area-heading">
-        <h2 id="software-heading">Open-Source Research Software</h2>
-        <span>Tools for neural network explanation</span>
+        <h2 id="interpretability-and-explainability-heading">Interpretability and Explainability</h2>
+        <span>Attribution, counterfactuals, graph explanations, BERT influence flow, and explainability tooling.</span>
       </div>
       <div class="compact-publications">
-        <article class="publication">
-          <span class="venue">Zenodo 2021</span>
-          <h3>TruLens: Library for Explaining Deep Neural Networks</h3>
-          <p class="authors">Klas Leino, Ricardo Shih, Matt Fredrikson, Jennifer She, <strong>Zifan Wang</strong>, Caleb Lu, Shayak Sen, Divya Gopinath, Anupam Datta</p>
-          <p class="summary">An open-source library for interpreting and analyzing deep neural network behavior.</p>
-          <div class="pub-links">
-            <a href="https://github.com/truera/trulens">GitHub</a>
-            <a href="https://zenodo.org/record/4495856">Zenodo</a>
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>On the Feature Alignment of Deep Vision Models Explainability and Robustness Connected at Hip</h3>
+            <p class="authors">Z Wang</p>
+            <p class="summary">Carnegie Mellon University, 2023</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:M3ejUd6NZC8C">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2022">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2022</span>
+            </div>
+            <h3>Faithful explanations for deep graph models</h3>
+            <p class="authors">Z Wang, Y Yao, C Zhang, H Zhang, Y Kang, C Joe-Wong, M Fredrikson, ...</p>
+            <p class="summary">arXiv preprint arXiv:2205.11850, 2022</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2205.11850">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:kNdYIx-mwKoC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2022">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2022</span>
+            </div>
+            <h3>Exploring conceptual soundness with trulens</h3>
+            <p class="authors">A Datta, M Fredrikson, K Leino, K Lu, S Sen, R Shih, Z Wang</p>
+            <p class="summary">NeurIPS 2021 Competitions and Demonstrations Track, 302-307, 2022</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:KlAtU1dfN6UC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2021">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2021</span>
+            </div>
+            <h3>Machine learning explainability and robustness: connected at the hip</h3>
+            <p class="authors">A Datta, M Fredrikson, K Leino, K Lu, S Sen, Z Wang</p>
+            <p class="summary">Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data …, 2021</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:roLk4NBRz8UC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2021">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2021</span>
+            </div>
+            <h3>Consistent counterfactuals for deep models</h3>
+            <p class="authors">E Black, Z Wang, M Fredrikson, A Datta</p>
+            <p class="summary">ICLR 2022, 2021</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:UebtZRa9Y70C">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2020">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2020</span>
+            </div>
+            <h3>Influence Patterns for Explaining Information Flow in BERT</h3>
+            <p class="authors">K Lu, Z Wang, P Mardziel, A Datta</p>
+            <p class="summary">arXiv preprint arXiv:2011.00740, 2020</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2011.00740">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:qjMakFHDy7sC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2020">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2020</span>
+            </div>
+            <h3>Reconstructing Actions To Explain Deep Reinforcement Learning</h3>
+            <p class="authors">X Chen, Z Wang, Y Fan, B Jin, P Mardziel, C Joe-Wong, A Datta</p>
+            <p class="summary">arXiv preprint arXiv:2009.08507, 2020</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2009.08507">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:WF5omc3nYNoC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2020">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2020</span>
+            </div>
+            <h3>Smoothed Geometry for Robust Attribution</h3>
+            <p class="authors">Z Wang, H Wang, S Ramkumar, M Fredrikson, P Mardziel, A Datta</p>
+            <p class="summary">Proceedings of NeurIPS 2020, 2020</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:9yKSN-GCB0IC">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2020">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2020</span>
+            </div>
+            <h3>Interpreting interpretations: Organizing attribution methods by criteria</h3>
+            <p class="authors">Z Wang, P Mardziel, A Datta, M Fredrikson</p>
+            <p class="summary">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2020</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:IjCSPb-OGe4C">Scholar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" data-year="2020">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2020</span>
+            </div>
+            <h3>Score-CAM: Score-weighted visual explanations for convolutional neural networks</h3>
+            <p class="authors">H Wang, Z Wang, M Du, F Yang, Z Zhang, S Ding, P Mardziel, X Hu</p>
+            <p class="summary">Proceedings of the IEEE/CVF conference on computer vision and pattern …, 2020</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:UeHWp8X0CEIC">Scholar</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="area-block" aria-labelledby="teaching-heading">
+    <section class="area-block" aria-labelledby="formal-methods-and-systems-heading">
       <div class="area-heading">
-        <h2 id="teaching-heading">Teaching and Talks</h2>
-        <span>Selected academic service and presentations</span>
+        <h2 id="formal-methods-and-systems-heading">Formal Methods and Systems</h2>
+        <span>Neuro-symbolic reasoning, SMT grounding, and practical ML systems.</span>
       </div>
-      <div class="teaching-list">
-        <article class="teaching-item">
-          <p><strong>Teaching Assistant, Fall 2019:</strong> CMU 18-661, <a href="https://18661.github.io/">Introduction to Machine Learning for Engineers</a></p>
+      <div class="compact-publications">
+        <article class="publication" data-year="2024">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2024</span>
+            </div>
+            <h3>Verisplit: Secure and practical offloading of machine learning inferences across iot devices</h3>
+            <p class="authors">H Zhang, Z Wang, M Dhamankar, M Fredrikson, Y Agarwal</p>
+            <p class="summary">arXiv preprint arXiv:2406.00586, 2024</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2406.00586">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:e5wmG9Sq2KIC">Scholar</a>
+            </div>
+          </div>
         </article>
-        <article class="teaching-item">
-          <p><strong>Teaching Assistant, Spring 2020:</strong> CMU 18-739, <a href="http://www.archive.ece.cmu.edu/~ece739/index.html">Security and Fairness of Deep Learning</a></p>
+
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Learning modulo theories</h3>
+            <p class="authors">M Fredrikson, K Lu, S Vijayakumar, S Jha, V Ganesh, Z Wang</p>
+            <p class="summary">arXiv preprint arXiv:2301.11435, 2023</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2301.11435">arXiv</a> <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:_kc_bZDykSQC">Scholar</a>
+            </div>
+          </div>
         </article>
-        <article class="teaching-item">
-          <p><strong>AISC Presentation:</strong> <a href="https://ai.science/e/towards-frequency-based-explanation-for-robust-cnn--hBiCzxIOpi3iOm0woCyY">Towards Frequency-Based Explanation for Robust CNN</a></p>
-        </article>
-        <article class="teaching-item">
-          <p><strong>Talk:</strong> <a href="https://mp.weixin.qq.com/s/sjHVnp7sRN0eMf9c-1DDjQ">强大却无法理解的AI, 该不该使用？</a></p>
+
+        <article class="publication" data-year="2023">
+          <div>
+            <div class="publication-meta">
+              <span class="venue">2023</span>
+            </div>
+            <h3>Grounding neural inference with satisfiability modulo theories</h3>
+            <p class="authors">Z Wang, S Vijayakumar, K Lu, V Ganesh, S Jha, M Fredrikson</p>
+            <p class="summary">Advances in Neural Information Processing Systems 36, 22794-22806, 2023</p>
+            <div class="pub-links">
+              <a href="https://scholar.google.co.uk/citations?view_op=view_citation&amp;hl=en&amp;user=HJOP3wMAAAAJ&amp;pagesize=100&amp;citation_for_view=HJOP3wMAAAAJ:mVmsd5A6BfQC">Scholar</a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
@@ -186,9 +602,49 @@
 
   <footer class="site-footer">
     <div class="site-shell footer-content">
-      <span>&copy; Sail (Zifan) Wang</span>
+      <span>&copy; Zifan (Sail) Wang</span>
       <a href="index.html">Back to home</a>
     </div>
   </footer>
+  <script>
+    const fromInput = document.querySelector('#year-from');
+    const toInput = document.querySelector('#year-to');
+    const resetButton = document.querySelector('#year-reset');
+    const status = document.querySelector('#filter-status');
+    const papers = Array.from(document.querySelectorAll('.publication[data-year]'));
+    const areas = Array.from(document.querySelectorAll('.area-block'));
+
+    function applyYearFilter() {
+      const from = Number.parseInt(fromInput.value, 10);
+      const to = Number.parseInt(toInput.value, 10);
+      let visible = 0;
+
+      papers.forEach((paper) => {
+        const year = Number.parseInt(paper.dataset.year, 10);
+        const afterFrom = Number.isNaN(from) || year >= from;
+        const beforeTo = Number.isNaN(to) || year <= to;
+        const show = afterFrom && beforeTo;
+        paper.hidden = !show;
+        if (show) visible += 1;
+      });
+
+      areas.forEach((area) => {
+        const areaPapers = Array.from(area.querySelectorAll('.publication[data-year]'));
+        area.hidden = areaPapers.length > 0 && areaPapers.every((paper) => paper.hidden);
+      });
+
+      const hasFilter = fromInput.value || toInput.value;
+      status.textContent = hasFilter ? `${visible} publication${visible === 1 ? '' : 's'} shown.` : `${papers.length} publications shown.`;
+    }
+
+    fromInput.addEventListener('input', applyYearFilter);
+    toInput.addEventListener('input', applyYearFilter);
+    resetButton.addEventListener('click', () => {
+      fromInput.value = '';
+      toInput.value = '';
+      applyYearFilter();
+    });
+    applyYearFilter();
+  </script>
 </body>
 </html>
